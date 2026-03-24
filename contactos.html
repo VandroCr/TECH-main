@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VCR TECH - Contactos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="logo-area">
+                <span class="logo-mark">
+                    <img src="img/2.png" alt="VCR TECH logo">
+                </span>
+                <span class="logo-text">VCR TECH</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#inicio">Início</a></li>
+                    <li><a href="index.html#sobre">Sobre</a></li>
+                    <li><a href="index.html#servicos">Serviços</a></li>
+                    <li><a href="contactos.html" class="active">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-page">
+            <div class="container contact-layout">
+                <div class="contact-info-block">
+                    <h2>Fale connosco</h2>
+                    <p class="contact-text">
+                        Entra em contacto para suporte informático, desenvolvimento de sites ou portfólios profissionais.
+                    </p>
+
+                    <div class="contact-info-group">
+                        <h3>WhatsApp</h3>
+                        <a href="https://wa.me/258845417450?text=Ol%C3%A1%2C%20vim%20do%20site%20VCR%20TECH%20e%20preciso%20de%20ajuda." target="_blank" class="btn btn-whatsapp">
+                            Falar no WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="contact-info-group">
+                        <h3>Telemóvel</h3>
+                        <p class="contact-lines">
+                            <a href="tel:+258871839934">+258 87 183 9934</a><br>
+                            <a href="tel:+258845417450">+258 84 541 7450</a>
+                        </p>
+                    </div>
+
+                    <div class="contact-info-group">
+                        <h3>Horário</h3>
+                        <p class="contact-lines">
+                            Segunda a Sexta: 08h às 17h<br>
+                            Sábado: 09h às 14h<br>
+                            Domingo: Fechado
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-form-block">
+                    <h2>Envie-nos a sua mensagem</h2>
+                    <form class="contact-form" action="#" method="post">
+                        <div class="form-row">
+                            <label for="nome">Nome *</label>
+                            <input type="text" id="nome" name="nome" placeholder="Insira o seu nome" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" placeholder="Insira o seu endereço de email" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="assunto">Assunto *</label>
+                            <input type="text" id="assunto" name="assunto" placeholder="Sobre o que pretende falar?" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="mensagem">Mensagem (opcional)</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva aqui o seu pedido ou problema."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div class="container footer-inner">
+                <div class="footer-col footer-brand">
+                    <div class="logo-area footer-logo">
+                        <span class="logo-mark">
+                            <img src="img/2.png" alt="VCR TECH logo">
+                        </span>
+                        <span class="logo-text">VCR TECH</span>
+                    </div>
+                    <p class="footer-text">
+                        Suporte informático, desenvolvimento de websites e portfólios profissionais.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Links úteis</h4>
+                    <ul>
+                        <li><a href="index.html#inicio">Início</a></li>
+                        <li><a href="index.html#sobre">Sobre</a></li>
+                        <li><a href="index.html#servicos">Serviços</a></li>
+                        <li><a href="contactos.html">Contactos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contactos</h4>
+                    <ul>
+                        <li>Beira, Matacuane</li>
+                        <li>WhatsApp: <a href="https://wa.me/258845417450" target="_blank">+258 84 541 7450</a></li>
+                        <li>Chamada: <a href="tel:+258871839934">+258 87 183 9934</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li>Instalação de Windows</li>
+                        <li>Microsoft Office</li>
+                        <li>Atualizações e manutenção</li>
+                        <li>Limpeza de vírus</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span id="year"></span> VCR TECH. Todos os direitos reservados.</span>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
